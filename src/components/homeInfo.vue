@@ -1,6 +1,6 @@
 <template>
   <div class="info">
-    <section class="home__info container-fluid d-none d-sm-block">
+    <section class="home__info container-fluid d-none d-xl-block">
       <div class="row justify-content-between infom">
         <div class="info__img do__img col-12 col-md-4">
         </div>
@@ -16,7 +16,7 @@
         </div>
       </div>
     </section>
-    <section class="home__info container-fluid d-none d-sm-block">
+    <section class="home__info container-fluid d-none d-xl-block">
       <div class="row justify-content-between infom">
         <div class="info__img why__img  col-12 col-md-4">
         </div>
@@ -32,8 +32,7 @@
         </div>
       </div>
     </section>
-
-    <section class="home__info--sm container-fluid d-block d-sm-none">
+    <section class="home__info--sm container-fluid d-xl-none">
       <div class="row info--sm">
         <div class="info__title--sm do__title--sm col-12 mb-3">
           <img src="../assets/img/sm-do.svg" alt="info__title" class="img-fluid" width="200">
@@ -49,7 +48,7 @@
         </div>
       </div>
     </section>
-    <section class="home__info--sm container-fluid d-block d-sm-none">
+    <section class="home__info--sm container-fluid d-xl-none">
       <div class="row justify-content-between info--sm">
         <div class="info__title--sm why__title--sm col-12 my-3">
           <img src="../assets/img/sm-why.svg" alt="info__title" class="img-fluid" width="200">

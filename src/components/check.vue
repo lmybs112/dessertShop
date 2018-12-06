@@ -1,7 +1,7 @@
 <template>
   <div class="check container">
     <loading v-if="isLoading"></loading>
-    <div class="row justify-content-around" v-else>
+    <div class="row justify-content-around" @keyup.enter="submitHandler" v-else>
       <div class="send__container col-md-7 pt-5 px-0 mb-3">
         <div>
           <div class="px-3 pb-2">
@@ -97,7 +97,11 @@
               <div class="col-md">
                 <img :src="item.img" height="110" width="110">
               </div>
-              <div class="col-md text-left">
+              <div class="col-md text-left d-none d-xl-block">
+                <h5> {{item.title}} ({{item.count}})</h5>
+                <h5> $ {{item.amount}}</h5>
+              </div>
+              <div class="col-md mt-3 d-xl-none">
                 <h5> {{item.title}} ({{item.count}})</h5>
                 <h5> $ {{item.amount}}</h5>
               </div>
