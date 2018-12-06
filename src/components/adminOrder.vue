@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="row justify-content-center">
     <loading v-if="isLoading"></loading>
-    <table class="table table-hover" v-else>
+    <table class="table table-hover col-10" v-else>
       <thead class="thead-dark">
         <tr>
           <th scope="col">訂單ID</th>
