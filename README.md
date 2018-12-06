@@ -10,7 +10,7 @@
 + VueCli (2)
 + 使用 Vuex 集中數據管理
 + 使用 VueRouter 管理路徑
-+ 使用 JSON Server 模擬 Restful API並部署到 heroku
++ 使用 JSON Server 模擬 Restful API 並部署到 heroku
 + 使用 axios 進行 ajax 请求
 + 使用 Postman 測試 API 功能
 + 使用 Bootstrap 開發 RWD
