@@ -5,6 +5,9 @@
         <div class="admin">
           <div class="py-4 container" @keyup.enter="login">
             <h1 class="my-0 pt-4 pb-4 login__title">管理員登入</h1>
+            <span class="text-warning">
+              測試帳號：<strong>admin@test.com</strong><br/>
+              測試密碼：<strong>admin</strong></span>
             <div class="form-group row mx-2 justify-content-center">
               <label for="email" class="col-2 col-form-label label--bg py-3"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALXSURBVGhD7ZlNaxRBEIYHFQU/0JMIXtSL+g/Ej4y6M92DhlXQQdyedcGDOfkP1P0DhkgOmoCKHxdvigEVxCCIguLNsycP4s2rBtG3JuUcdivZmow6I/QDLxl6qt6u7untnt0EHo/H4xm/ML4+7iZp7MyNKLNzpNjZ67GLT9M9Dms2KHgicvZLnNmfopz5TDEc3jzSNF2NIu+JxUty9i7lcHpzQHHTQ8WOlLnG6c0g7sQH5EJHy2RmP9vUD5bUM6lIjbARPGGbegl74Ras9+9SkSohN0qjzWxXH7Q0xAJLKHLJPrarD2y1bam4MiIPtqsPfNDHpOLKyDp7iO3qI+wd2xY580MqUKPF3Hgr29ULdq03UpEaYVm9Zpv6wQf+pFSkRq2uPcE2zQBP5ZFU6HLC03jI6c2hfb69qcwSoyUVpuFGTm8WycVkHYqcXu6AjDLzDX+nKJbTmkur09qFwVzGE3qJoj/momu00T0O83g8Hk918OK3oeXsYWyxEzgrJunUxre/eeg9a36xzUzmMd0kpBxOr49+v78KxRzMC8vMO5wVC3TgldQCBvg2Hzi8yJPt/z6YxZ15x5n5JBQ2JLym3yRJ9wbFnldtz+7g7v485qzZg9OZfrfSzvxX0zFnOD2ga2obiFlK9KTu4AvXbk6vDv2Ihhm9gtmidySpU1GtzJxiiwJqk2KXEvd5qfKSwyDWYmbmBjtQydmnbFNAbWLsCGGTeEy1sE15MCP3JWOtjp47vp2tArqWYrTChN5iq3JgTR+RDNXCq3wYhmvYLqBrahNjterEY2ynB49zVjRTCvkf2KqA2qRYrbBCZthKDzp9IZlphaXwgK0KqE2K1YpqYis92GpfSWZa0U7HVgXUJsWqhZrYSk/VgdB/p9iqgNrEWK3qGEjUjfayVQG1SbFq/fOBDOxYv6m8c61oIJmdQuLzlcneZpsh6J6coxBqYhuPx+P5rwmCX5cx7PCxu06JAAAAAElFTkSuQmCC" width="32"></label>
               <input type="email" class="form-control py-3 col-10 input--bg" id="email" v-validate="'required|email'"
