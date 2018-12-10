@@ -7,6 +7,7 @@
       <img src="../assets/img/home__info__res.svg" alt="res" width="88" class="d-none d-sm-block img-fluid m-auto">
       <img src="../assets/img/sm-res.svg" alt="res" width="250" class="d-block d-sm-none m-auto img-fluid">
     </div>
+    <homeRecommend></homeRecommend>
   </div>
 </template>
 
@@ -14,6 +15,7 @@
 import homeCarousel from "../components/homeCarousel.vue";
 import homeTopic from "../components/homeTopic.vue";
 import homeInfo from "../components/homeInfo.vue";
+import homeRecommend from "../components/homeRecommend.vue";
 export default {
   data() {
     return {};
@@ -21,7 +23,8 @@ export default {
   components: {
     homeTopic,
     homeInfo,
-    homeCarousel
+    homeCarousel,
+    homeRecommend
   }
 };
 </script>
