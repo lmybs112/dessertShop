@@ -1,7 +1,6 @@
 <template>
   <div class="container justify-content-center my-5">
-    <loading v-if="isLoading"></loading>
-    <div class="row mb-2" v-else>
+    <div class="row mb-2">
       <div class="col-md-4" v-for="item in shopDesserts" :key="item.id" v-show="item.type==='本日精選'">
         <div class="product-img" :style="{ 'background-image': 'url(' + item.img + ')' }">
           <span class="topic-today">{{item.type}}</span>
@@ -19,17 +18,14 @@
 </template>
 
 <script>
-import loading from "@/components/loading";
 import addModal from "@/components/addModal";
 export default {
   data() {
     return {
       shopDesserts: [],
-      isLoading:false
     };
   },
   components: {
-    loading,
     addModal
   },
   methods: {
@@ -46,13 +42,10 @@ export default {
     }
   },
   created() {
-    this.isLoading = true;
     this.$axios
       .get('desserts')
       .then(res => {
         this.shopDesserts = res.data
-        this.isLoading=false
-
       })
       .catch(err => {
         console.log(err);

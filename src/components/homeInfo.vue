@@ -110,11 +110,11 @@ export default {
 }
 
 .do__img {
-  background-image: url("../assets/img/home__info1.jpeg");
+  background-image: url("../assets/img/home__info1.jpg");
   left: 12.5rem;
   &--sm {
     height: 22.5rem;
-    background-image: url("../assets/img/home__info1.jpeg");
+    background-image: url("../assets/img/home__info1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
