@@ -1,7 +1,6 @@
 <template>
   <div class="dessert__container container">
-    <loading v-if="isLoading"></loading>
-    <header class="jumbotron jumbotron-fluid" v-else>
+    <header class="jumbotron jumbotron-fluid">
     </header>
     <!-- List group -->
     <div class="container">
@@ -91,7 +90,6 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import loading from "@/components/loading";
   import addModal from "@/components/addModal";
   export default {
     data() {
@@ -101,7 +99,6 @@
       };
     },
     components: {
-      loading,
       addModal
     },
     methods: {
@@ -118,12 +115,10 @@
       }
     },
     created() {
-      this.isLoading = true;
       this.$axios
         .get('desserts')
         .then(res => {
           this.shopDesserts = res.data;
-          this.isLoading = false;
         })
         .catch(err => {
           console.log(err);
